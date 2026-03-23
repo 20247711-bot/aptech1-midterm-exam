@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 
 const Signup = () => {
+const navigate = useNavigate();
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
@@ -95,8 +97,11 @@ const Signup = () => {
           Submit
         </button>
       </form>
+      <br />
+      <button onClick={()=> navigate(-1)} className="btn btn-primary">Go Back Home</button>
     </div>
   );
+  
 };
 
 export default Signup;
