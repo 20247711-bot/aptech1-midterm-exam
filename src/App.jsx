@@ -12,7 +12,6 @@ const Profile = () => (
   </div>
 );
 
-
 const App = () => {
   return (
     <Router>
