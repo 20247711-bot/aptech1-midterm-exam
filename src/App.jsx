@@ -4,14 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './Components/NavBar';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
-
-
-const Profile = () => (
-  <div className="container mt-4">
-    <h2>Profile Page</h2>
-    <Form />
-  </div>
-);
+import Success from './pages/Success';
+import Profile from './pages/Profile';
 
 const App = () => {
   return (
@@ -21,6 +15,7 @@ const App = () => {
         <Route path="/Home" element={<Home />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Success" element={<Success />} />
       </Routes>
     </Router>
   );
